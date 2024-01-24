@@ -30,7 +30,6 @@ namespace Modules.SRDebuggerAndCamera.Controller
                 Release();
                 return;
 #endif
-            Application.RequestAdvertisingIdentifierAsync(IdfaCheck);
         }
         private void IdfaCheck(string advertisingId, bool trackingEnabled, string error)
         {

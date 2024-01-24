@@ -205,7 +205,7 @@ namespace StylizedWater2
         {
             if (!script) return;
             
-            FloatingTransform.Disable = UnityEditor.SceneManagement.PrefabStageUtility.GetCurrentPrefabStage() != null || editSamples;
+            FloatingTransform.Disable = PrefabStageUtility.GetCurrentPrefabStage() != null || editSamples;
             
             if (editSamples)
             {

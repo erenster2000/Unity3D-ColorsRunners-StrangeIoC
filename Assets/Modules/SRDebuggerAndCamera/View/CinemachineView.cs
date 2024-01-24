@@ -7,7 +7,8 @@ namespace Modules.SRDebuggerAndCamera.View
     {
         public Transform freeCamParent;
         public Animator animator;
-        private void Start()
+
+        protected override void Start()
         {
             animator = GetComponent<Animator>();
         }
