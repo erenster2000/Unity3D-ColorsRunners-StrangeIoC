@@ -7,7 +7,7 @@ Mesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Generated convex submesh 10
-  serializedVersion: 10
+  serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
@@ -154,6 +154,7 @@ Mesh:
     m_Center: {x: 1.4679055, y: -1.2176145, z: -0.57752424}
     m_Extent: {x: 0.084424436, y: 0.31092346, z: 0.22671227}
   m_MeshUsageFlags: 0
+  m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshMetrics[0]: 1
@@ -173,21 +174,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b71ad40e238046238f9b0c6f33c3791, type: 3}
+  m_Script: {fileID: 11500000, guid: 104d70a0c60be8e4b968103750f0318c, type: 3}
   m_Name: PickerFBX0_Convex
   m_EditorClassIdentifier: 
-  ConvexMeshes:
-  - {fileID: 3434713940229033873}
-  - {fileID: 1781789331291288399}
-  - {fileID: 1998641633953155386}
-  - {fileID: 8574853199307409225}
-  - {fileID: 8034737156577510308}
-  - {fileID: 5461532833441357248}
-  - {fileID: 8013971688620755536}
-  - {fileID: 9179438585368060982}
-  - {fileID: 8934208797650208022}
-  - {fileID: -2803189138719710338}
-  HashOfSourceMeshes: 04bc5d6a5314a6cad701d46200000000
+  ConvexMeshes: []
+  HashOfSourceMeshes: 
 --- !u!43 &1781789331291288399
 Mesh:
   m_ObjectHideFlags: 0
@@ -195,7 +186,7 @@ Mesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Generated convex submesh 2
-  serializedVersion: 10
+  serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
@@ -342,6 +333,7 @@ Mesh:
     m_Center: {x: 1.7547984, y: -1.2192028, z: 0.9296999}
     m_Extent: {x: 0.19886667, y: 0.30480278, z: 2.0937796}
   m_MeshUsageFlags: 0
+  m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshMetrics[0]: 1
@@ -359,7 +351,7 @@ Mesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Generated convex submesh 3
-  serializedVersion: 10
+  serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
@@ -506,6 +498,7 @@ Mesh:
     m_Center: {x: -1.032049, y: -1.2192466, z: -1.5587258}
     m_Extent: {x: 0.48209515, y: 0.30484658, z: 0.32781547}
   m_MeshUsageFlags: 0
+  m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshMetrics[0]: 1
@@ -523,7 +516,7 @@ Mesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Generated convex submesh 1
-  serializedVersion: 10
+  serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
@@ -670,6 +663,7 @@ Mesh:
     m_Center: {x: -1.7429657, y: -1.2175841, z: 0.92425936}
     m_Extent: {x: 0.21069926, y: 0.3109538, z: 2.1021707}
   m_MeshUsageFlags: 0
+  m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshMetrics[0]: 1
@@ -687,7 +681,7 @@ Mesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Generated convex submesh 6
-  serializedVersion: 10
+  serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
@@ -834,6 +828,7 @@ Mesh:
     m_Center: {x: -1.4645858, y: -1.2175539, z: -0.5823226}
     m_Extent: {x: 0.07583827, y: 0.31092346, z: 0.19980171}
   m_MeshUsageFlags: 0
+  m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshMetrics[0]: 1
@@ -851,7 +846,7 @@ Mesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Generated convex submesh 7
-  serializedVersion: 10
+  serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
@@ -998,6 +993,7 @@ Mesh:
     m_Center: {x: 0.28321487, y: -1.2192781, z: -1.7433437}
     m_Extent: {x: 0.26301086, y: 0.30487812, z: 0.23569489}
   m_MeshUsageFlags: 0
+  m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshMetrics[0]: 1
@@ -1015,7 +1011,7 @@ Mesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Generated convex submesh 5
-  serializedVersion: 10
+  serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
@@ -1162,6 +1158,7 @@ Mesh:
     m_Center: {x: -1.2799294, y: -1.2175539, z: -1.003931}
     m_Extent: {x: 0.25622016, y: 0.31092346, z: 0.22180676}
   m_MeshUsageFlags: 0
+  m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshMetrics[0]: 1
@@ -1179,7 +1176,7 @@ Mesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Generated convex submesh 4
-  serializedVersion: 10
+  serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
@@ -1326,6 +1323,7 @@ Mesh:
     m_Center: {x: -0.26404315, y: -1.2188711, z: -1.7453278}
     m_Extent: {x: 0.27413273, y: 0.30447108, z: 0.23669636}
   m_MeshUsageFlags: 0
+  m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshMetrics[0]: 1
@@ -1343,7 +1341,7 @@ Mesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Generated convex submesh 9
-  serializedVersion: 10
+  serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
@@ -1490,6 +1488,7 @@ Mesh:
     m_Center: {x: 1.2905385, y: -1.2176145, z: -1.0129527}
     m_Extent: {x: 0.2617401, y: 0.31092346, z: 0.20895192}
   m_MeshUsageFlags: 0
+  m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshMetrics[0]: 1
@@ -1507,7 +1506,7 @@ Mesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Generated convex submesh 8
-  serializedVersion: 10
+  serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
@@ -1654,6 +1653,7 @@ Mesh:
     m_Center: {x: 1.0382094, y: -1.2192504, z: -1.5534425}
     m_Extent: {x: 0.48111215, y: 0.30485052, z: 0.3313076}
   m_MeshUsageFlags: 0
+  m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshMetrics[0]: 1

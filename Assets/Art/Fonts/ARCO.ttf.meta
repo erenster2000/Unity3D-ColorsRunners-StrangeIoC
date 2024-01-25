@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f12e1c45bf25c0c49a2a48e46ee5bcb8
+guid: a02012723ed8b564eaf5c94b564b2e22
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -8,6 +8,7 @@ TrueTypeFontImporter:
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
+  fontName: ARCO Typography
   fontNames:
   - ARCO Typography
   fallbackFontReferences: []
