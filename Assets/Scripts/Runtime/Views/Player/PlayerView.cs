@@ -3,6 +3,7 @@ using Rich.Base.Runtime.Abstract.View;
 using Runtime.Data.ValueObject;
 using Runtime.Key;
 using Sirenix.OdinInspector;
+using StylizedWater2;
 using TMPro;
 using Unity.Mathematics;
 using UnityEngine;
@@ -19,6 +20,7 @@ namespace Runtime.Views.Player
         public UnityAction onReset = delegate { };
         public UnityAction<Transform, Transform> onStageAreaEntered = delegate { };
         public UnityAction onFinishAreaEntered = delegate { };
+        public UnityAction OnColorChangerTriggered = delegate { };
 
         #endregion
 
@@ -27,7 +29,9 @@ namespace Runtime.Views.Player
         [SerializeField] private new Rigidbody rigidbody;
         [SerializeField] private new Renderer renderer;
         [SerializeField] private TextMeshPro scaleText;
+        [SerializeField] private SkinnedMeshRenderer skinnedMeshRenderer;
         [SerializeField] private ParticleSystem confettiParticle;
+        
 
         #endregion
 
@@ -38,11 +42,14 @@ namespace Runtime.Views.Player
 
         private float2 _clampValues;
         [ShowInInspector] private PlayerData _playerData;
+        [ShowInInspector] private ColorData _colorData;
+        [ShowInInspector] private StackData _stackData;
 
 
         private readonly string _stageArea = "StageArea";
         private readonly string _finish = "FinishArea";
         private readonly string _miniGame = "MiniGameArea";
+        private readonly string _colorChange = "ColorChanger";
 
         #endregion
 
@@ -141,6 +148,11 @@ namespace Runtime.Views.Player
             {
                 //Write the MiniGame Mechanics
             }
+            if (other.CompareTag(_colorChange))
+            {
+                GetWallMat(other.GetComponent<Renderer>());
+                
+            }
         }
 
 
@@ -179,5 +191,19 @@ namespace Runtime.Views.Player
             _isReadyToPlay = false;
             renderer.gameObject.transform.DOScaleX(1, 1).SetEase(Ease.Linear);
         }
+        
+        private void GetWallMat(Renderer renderer)
+        {
+            Material wallMaterial = renderer.material;
+            
+            SetPlayerMaterial(wallMaterial);
+        }
+        private void SetPlayerMaterial(Material mat)
+        {
+            skinnedMeshRenderer.material = mat;
+        }
+
+        
+        
     }
 }

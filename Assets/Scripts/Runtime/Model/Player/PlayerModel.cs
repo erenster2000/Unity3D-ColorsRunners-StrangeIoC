@@ -1,4 +1,5 @@
 using Runtime.Data.UnityObject;
+using Runtime.Data.UnityObject;
 using UnityEngine;
 
 namespace Runtime.Model.Player
@@ -6,8 +7,11 @@ namespace Runtime.Model.Player
     public class PlayerModel : IPlayerModel
     {
         private CD_Player _playerData;
+       
+     
 
         private const string PlayerDataPath = "Data/CD_Player";
+       
         
         public byte StageValue { get; set; }
 
@@ -15,6 +19,7 @@ namespace Runtime.Model.Player
         private void OnLoadPlayerData()
         {
             _playerData = Resources.Load<CD_Player>(PlayerDataPath);
+            
         }
 
         public CD_Player PlayerData
@@ -30,5 +35,9 @@ namespace Runtime.Model.Player
             }
             set => _playerData = value;
         }
+        
+        
+        
+        
+        }
     }
-}

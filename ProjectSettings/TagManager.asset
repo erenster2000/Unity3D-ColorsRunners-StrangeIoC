@@ -9,6 +9,9 @@ TagManager:
   - StageArea
   - PoolArea
   - MiniGameArea
+  - PlayerObj
+  - ColorChanger
+  - MinigameExit
   layers:
   - Default
   - TransparentFX

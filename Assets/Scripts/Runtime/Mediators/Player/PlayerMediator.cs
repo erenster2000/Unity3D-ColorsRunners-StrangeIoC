@@ -4,7 +4,9 @@ using Runtime.Model.Player;
 using Runtime.Signals;
 using Runtime.Views.Player;
 using Runtime.Views.Pool;
+using StylizedWater2;
 using UnityEngine;
+using Color = System.Drawing.Color;
 
 namespace Runtime.Mediators.Player
 {
@@ -26,7 +28,7 @@ namespace Runtime.Mediators.Player
             InputSignals.onInputTaken.AddListener(View.OnInputTaken);
             PlayerSignals.onStageAreaSuccessful.AddListener(StageAreaSuccessful);
             UISignals.onPlay.AddListener(OnPlay);
-
+            
             View.onReset += OnReset;
             View.onStageAreaEntered += OnStageAreaEntered;
             View.onFinishAreaEntered += OnFinishAreaEntered;
@@ -38,6 +40,9 @@ namespace Runtime.Mediators.Player
             View.IsReadyToPlay(true);
         }
 
+        
+
+        
         private void OnStageAreaEntered(Transform view, Transform other)
         {
             PlayerSignals.onForceCommand.Dispatch(view, Model.PlayerData.PlayerData.ForceData);
@@ -60,7 +65,8 @@ namespace Runtime.Mediators.Player
                 }
             });
         }
-
+        
+        
         private void StageAreaSuccessful(byte obj)
         {
             Model.StageValue++;
@@ -69,6 +75,8 @@ namespace Runtime.Mediators.Player
             View.PlayConfettiParticle();
             View.ScaleUpPlayer();
         }
+        
+        
 
         private void OnFinishAreaEntered()
         {

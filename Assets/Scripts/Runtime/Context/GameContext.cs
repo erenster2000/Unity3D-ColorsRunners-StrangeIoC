@@ -54,12 +54,14 @@ namespace Runtime.Context
             commandBinder.Bind(_levelSignals.onRestartLevel).To<LevelFailedCommand>();
             commandBinder.Bind(_levelSignals.onNextLevel).To<LevelSuccessfulCommand>();
             
+            
             commandBinder.Bind(_coreGameSignals.onLevelFailed).To<OpenLevelFailedScreenCommand>();
             commandBinder.Bind(_coreGameSignals.onLevelSuccessful).To<OpenLevelSuccessfulScreenCommand>();
             commandBinder.Bind(_coreGameSignals.onReset).To<OpenStartScreenPanelCommand>();
 
             commandBinder.Bind(_playerSignals.onForceCommand).To<ForceBallsToPoolCommand>();
             commandBinder.Bind(_playerSignals.onStageAreaSuccessful).To<OnStageAreaSuccessfulCommand>();
+            commandBinder.Bind(_playerSignals.StackAddObj).To<ManageStackCommand>();
         }
 
         public override void Launch()
