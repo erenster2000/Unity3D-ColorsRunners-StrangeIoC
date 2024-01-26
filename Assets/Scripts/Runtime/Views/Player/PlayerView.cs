@@ -42,7 +42,6 @@ namespace Runtime.Views.Player
 
         private float2 _clampValues;
         [ShowInInspector] private PlayerData _playerData;
-        [ShowInInspector] private ColorData _colorData;
         [ShowInInspector] private StackData _stackData;
 
 
